@@ -45,8 +45,7 @@ table {
 a {
   display: inline-block;
   font-family: "Bebas";
-  text-decoration: none;
-  text-transform: none !important; }
+  text-decoration: none; }
 
 a:hover {
   text-decoration: none; }
