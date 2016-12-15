@@ -46,6 +46,7 @@ a {
 	display: inline-block;
 	font-family: "Bebas";
 	text-decoration: none;
+	text-transform: none !important;
 }
 a:hover {
 	text-decoration: none;
@@ -100,7 +101,7 @@ header {
 			float: left;
 			margin-left: 26px;
 			a {
-				text-transform: uppercase;
+
 				font-size: 16px;
 				color: $grey-text;
 			}
@@ -119,17 +120,44 @@ main {
 		background: $deep-orange;
 		li {
 			height: 400px;
-			width: 100%;
+			.slider-content {
+				display: inline-block;
+				padding: 15px;
+				max-width: 415px;
+				background: $opacity-orange;
+				color: #fff;
+				.slider-content-header {
+					font: 18px "Bebas";
+					text-transform: uppercase;
+				}
+				p {
+					font-family: verdana;
+					font-size: 12px;
+				}
+			}
 		}
 		.slide-1 {
 			background: url(../img/slider/slide-1.jpg) center center;
+			.slider-content {
+				position: relative;
+				margin-top: 243px;
+				margin-left: 33px;
+			}
 		}
 		.slide-2 {
 			background: url(../img/slider/slide-1.jpg);
 			background-size: cover;
+			.slider-content {
+				margin-top: 43px;
+				margin-left: 33px;
+			}
 		}
 		.slide-3 {
 			background: url(../img/slider/slide-1.jpg) 100% 100%;
+			.slider-content {
+				margin-top: 243px;
+				margin-left: 33px;
+			}
 		}
 
 	}
@@ -330,4 +358,7 @@ footer {
 			}
 		}
 	}
+}
+.test-link {
+	text-transform: lowercase;
 }
