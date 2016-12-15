@@ -1,0 +1,327 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	font: 12px "Helveticaneu", sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+	display: inline-block;
+	font-family: "Bebas";
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+.clr {
+	clear: both;
+}
+@font-face {
+	font-family: "Bebas";
+	src: url("../fonts/bebas.ttf") format("truetype");
+	font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+	font-family: "Helveticaneu";
+	src: url("../fonts/helveticaneu.otf") format("truetype");
+	font-style: normal;
+    font-weight: normal;
+}
+$deep-orange: #e8663c;
+$opacity-orange: rgba(232, 102, 60, 0.5);
+$grey-text: #b9b9b9;
+.wrapper {
+	margin: 0 auto;
+	padding: 0 10px;
+	max-width: 960px;
+	background: #fff;
+}
+header {
+	padding: 20px 0;
+	.menu-btn {
+		display: none;
+		margin: 12px 0;
+		font-size: 20px;
+		color: $deep-orange;
+	}
+	.logo {
+		float: left;
+		h1 {
+			font-size: 36px;
+			color: $deep-orange;
+			span {
+				color: $opacity-orange;
+			}
+		}
+	}
+	.top-navigation {
+		float: right;
+		margin-top: 10px;
+		li {
+			float: left;
+			margin-left: 26px;
+			a {
+				text-transform: uppercase;
+				font-size: 16px;
+				color: $grey-text;
+			}
+			a:hover {
+				color: $deep-orange;
+				text-decoration: none;
+			}
+			.active {
+				color: $deep-orange;
+			}
+		}
+	}
+}
+main {
+	.top-slider {
+		background: $deep-orange;
+		li {
+			height: 400px;
+			width: 100%;
+		}
+		.slide-1 {
+			background: url(../img/slider/slide-1.jpg) center center;
+		}
+		.slide-2 {
+			background: url(../img/slider/slide-1.jpg);
+			background-size: cover;
+		}
+		.slide-3 {
+			background: url(../img/slider/slide-1.jpg) 100% 100%;
+		}
+
+	}
+	.thumbnails {
+		margin-top: 35px;
+		.thumbnails-item {
+			text-align: center;
+			img {
+				width: 100%;
+			}
+		}
+		a {
+			transition: opacity 0.2s;
+		}
+		a:hover {
+			opacity: 0.7;
+		}
+	}
+}
+.features {
+	margin-top: 35px;
+	.features-item {
+		.features-item-header-link {
+			display: table-cell;
+			padding:0 0 2px 70px;
+			height: 50px;
+			font-size: 18px;
+			color: $deep-orange;
+			transition: opacity 0.3s;
+			vertical-align: middle;
+		}
+		.portfolio {
+			background: url(../img/portfolio-header.png) 0 4px no-repeat;
+		}
+		.works {
+			background: url(../img/work-header.png) 0 4px no-repeat;
+		}
+		.connected {
+			background: url(../img/connected-header.png) 0 4px no-repeat;
+		}
+		.features-item-header-link:hover {
+			opacity: 0.5;
+		}
+		.features-item-text {
+			margin-top: 30px;
+			color: #414141;
+		}
+		.features-item-moer-link {
+			margin-top: 18px;
+			padding: 8px 11px;
+			background: $deep-orange;
+			text-transform: uppercase;
+			font-size: 12px;
+			color: #fff;
+			transition: opacity 0.3s;
+		}
+		.features-item-moer-link:hover {
+			opacity: 0.5;
+		}
+	}
+
+}
+.recent-works {
+	margin: 40px 0;
+	.recent-works-header {
+		margin-bottom: 25px;
+		background: url(../img/works-bg.jpg) 0 2px repeat-x;
+		a {
+			padding-right: 20px;
+			font-size: 18px;
+			background: #fff;
+			color: $deep-orange;
+		}
+	}
+	.col-md-3 {
+		text-align: center;
+	}
+	.recent-works-item {
+		margin-bottom: 10px;
+		img {
+			width: 100%;
+		}
+		.recent-works-description {
+			margin-top: -2px;
+			padding: 12px;
+			border: 1px solid $grey-text;
+			border-top: none;
+			text-align: left;
+			h2 {
+				font-size: 16px;
+				text-transform: uppercase;
+				color: $grey-text;
+			}
+			span {
+				display: inline-block;
+				margin-top: 12px;
+				font-size: 11px;
+				text-transform: none;
+				color: $deep-orange;
+			}
+		}
+	}
+}
+footer {
+	background: $opacity-orange;
+	color: #fff;
+	.footer-content {
+		padding: 35px;
+		background: $deep-orange;
+		color: #fff;
+		.footer-content-header {
+			margin-bottom: 25px;
+			font-family: "Bebas";
+			text-transform: uppercase;
+			font-size: 20px;
+		}
+		p {
+			margin-bottom: 15px;
+		}
+		.about-jetro {
+
+		}
+		.twitter-widget {
+			span, .tweet-time {
+				color: #f3b29d;
+			}
+			.tweet-time {
+				margin: 10px 0;
+			}
+		}
+	}
+}
+@media only screen and (max-width: 991px) {
+	.top-slider, .footer-content {
+		margin: 0 -10px;
+	}
+	.thumbnails {
+		margin-left: 0;
+		margin-right: 0;
+		.thumbnails-item {
+			padding: 0;
+			margin-bottom: 20px;
+		}
+	}
+	.features {
+		margin-left: 0;
+		margin-right: 0;
+		.features-item {
+			padding: 0;
+			margin-bottom: 25px;
+		}
+	}
+	.recent-works-row {
+		margin-left: 0;
+		margin-right: 0;
+		.recent-works-col {
+			padding: 0;
+		}
+	}
+
+	.about-jetro, .twitter-widget, .contact-us {
+		margin-bottom: 25px;
+
+	}
+}
+@media only screen and (max-width: 768px) {
+	header {
+		position: fixed;
+		margin-top: -40px;
+		padding: 0;
+		z-index: 5;
+		width: 100%;
+		.menu-btn {
+			display: inline-block;
+		}
+		.logo {
+			float: right;
+		}
+		.top-navigation {
+			display: none;
+			float: none;
+			li {
+				float: none;
+				margin: 0;
+				a {
+					padding: 5px 0 5px 10px;
+					width: 100%;
+					border-bottom: 1px solid $opacity-orange;
+				}
+			}
+		}
+	}
+	main {
+		margin-top:40px !important;
+	}
+}
