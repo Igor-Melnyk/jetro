@@ -60,9 +60,10 @@ a:hover {
   font-weight: normal; }
 @font-face {
   font-family: "Helveticaneu";
-  src: url("../fonts/helveticaneu.otf") format("truetype");
+  src: url("../fonts/helveticaneu.otf");
   font-style: normal;
-  font-weight: normal; }
+  font-weight: normal;
+  text-transform: none; }
 .wrapper {
   margin: 0 auto;
   padding: 0 10px;
@@ -99,49 +100,52 @@ header {
       header .top-navigation li .active {
         color: #e8663c; }
 
-main .top-slider {
-  background: #e8663c; }
-  main .top-slider li {
-    height: 400px; }
-    main .top-slider li .slider-content {
-      display: inline-block;
-      padding: 15px;
-      max-width: 415px;
-      background: rgba(232, 102, 60, 0.5);
-      color: #fff; }
-      main .top-slider li .slider-content .slider-content-header {
-        font: 18px "Bebas";
-        text-transform: uppercase; }
-      main .top-slider li .slider-content p {
-        font-family: verdana;
-        font-size: 12px; }
-  main .top-slider .slide-1 {
-    background: url(../img/slider/slide-1.jpg) center center; }
-    main .top-slider .slide-1 .slider-content {
-      position: relative;
-      margin-top: 243px;
-      margin-left: 33px; }
-  main .top-slider .slide-2 {
-    background: url(../img/slider/slide-1.jpg);
-    background-size: cover; }
-    main .top-slider .slide-2 .slider-content {
-      margin-top: 43px;
-      margin-left: 33px; }
-  main .top-slider .slide-3 {
-    background: url(../img/slider/slide-1.jpg) 100% 100%; }
-    main .top-slider .slide-3 .slider-content {
-      margin-top: 243px;
-      margin-left: 33px; }
-main .thumbnails {
-  margin-top: 35px; }
-  main .thumbnails .thumbnails-item {
-    text-align: center; }
-    main .thumbnails .thumbnails-item img {
-      width: 100%; }
-  main .thumbnails a {
-    transition: opacity 0.2s; }
-  main .thumbnails a:hover {
-    opacity: 0.7; }
+main {
+  background-image: linear-gradient(rgba(232, 102, 60, 0.5) 50px, transparent 50px); }
+  main .top-slider {
+    background: #e8663c; }
+    main .top-slider li {
+      height: 400px; }
+      main .top-slider li .slider-content {
+        display: inline-block;
+        padding: 15px;
+        max-width: 415px;
+        background: rgba(232, 102, 60, 0.5);
+        color: #fff; }
+        main .top-slider li .slider-content .slider-content-header {
+          font: 18px "Bebas";
+          text-transform: uppercase; }
+        main .top-slider li .slider-content p {
+          margin-top: 20px;
+          font-family: verdana;
+          font-size: 12px; }
+    main .top-slider .slide-1 {
+      background: url(../img/slider/slide-1.jpg) center center; }
+      main .top-slider .slide-1 .slider-content {
+        position: relative;
+        margin-top: 243px;
+        margin-left: 33px; }
+    main .top-slider .slide-2 {
+      background: url(../img/slider/slide-1.jpg);
+      background-size: cover; }
+      main .top-slider .slide-2 .slider-content {
+        margin-top: 43px;
+        margin-left: 33px; }
+    main .top-slider .slide-3 {
+      background: url(../img/slider/slide-1.jpg) 100% 100%; }
+      main .top-slider .slide-3 .slider-content {
+        margin-top: 243px;
+        margin-left: 33px; }
+  main .thumbnails {
+    margin-top: 35px; }
+    main .thumbnails .thumbnails-item {
+      text-align: center; }
+      main .thumbnails .thumbnails-item img {
+        width: 100%; }
+    main .thumbnails a {
+      transition: opacity 0.2s; }
+    main .thumbnails a:hover {
+      opacity: 0.7; }
 
 .features {
   margin-top: 35px; }
@@ -223,9 +227,18 @@ footer {
     footer .footer-content p {
       margin-bottom: 15px; }
     footer .footer-content .twitter-widget span, footer .footer-content .twitter-widget .tweet-time {
+      font-family: "Helveticaneu";
       color: #f3b29d; }
     footer .footer-content .twitter-widget .tweet-time {
       margin: 10px 0; }
+    footer .footer-content .contact-us a {
+      color: #fff;
+      font-family: "Helveticaneu"; }
+    footer .footer-content .contact-us a:hover {
+      color: #fff; }
+    footer .footer-content a:hover {
+      color: #f3b29d;
+      text-decoration: underline; }
 
 @media only screen and (max-width: 991px) {
   .top-slider, .footer-content {
@@ -279,7 +292,5 @@ footer {
     margin-top: 40px; }
     main .recent-works-description h2 {
       height: 45px; } }
-.test-link {
-  text-transform: lowercase; }
 
 /*# sourceMappingURL=main.css.map */

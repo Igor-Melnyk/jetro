@@ -46,7 +46,6 @@ a {
 	display: inline-block;
 	font-family: "Bebas";
 	text-decoration: none;
-	text-transform: none !important;
 }
 a:hover {
 	text-decoration: none;
@@ -62,9 +61,10 @@ a:hover {
 }
 @font-face {
 	font-family: "Helveticaneu";
-	src: url("../fonts/helveticaneu.otf") format("truetype");
+	src: url("../fonts/helveticaneu.otf");
 	font-style: normal;
     font-weight: normal;
+    text-transform: none;
 }
 $deep-orange: #e8663c;
 $opacity-orange: rgba(232, 102, 60, 0.5);
@@ -116,6 +116,8 @@ header {
 	}
 }
 main {
+	
+    background-image: linear-gradient($opacity-orange 50px, transparent 50px);
 	.top-slider {
 		background: $deep-orange;
 		li {
@@ -131,6 +133,7 @@ main {
 					text-transform: uppercase;
 				}
 				p {
+					margin-top: 20px;
 					font-family: verdana;
 					font-size: 12px;
 				}
@@ -282,11 +285,25 @@ footer {
 		}
 		.twitter-widget {
 			span, .tweet-time {
+				font-family: "Helveticaneu";
 				color: #f3b29d;
 			}
 			.tweet-time {
 				margin: 10px 0;
 			}
+		}
+		.contact-us {
+			a {
+				color: #fff;
+				font-family: "Helveticaneu";
+			}
+			a:hover {
+				color: #fff;
+			}
+		}	
+		a:hover {
+			color: #f3b29d;
+			text-decoration: underline;
 		}
 	}
 }
@@ -358,7 +375,4 @@ footer {
 			}
 		}
 	}
-}
-.test-link {
-	text-transform: lowercase;
 }

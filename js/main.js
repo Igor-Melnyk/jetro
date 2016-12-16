@@ -1,6 +1,7 @@
 $('document').ready(function () {
 	$('.bxslider').bxSlider({
-		auto: true
+		auto: true,
+		pager: true
 	});
 	$('.menu-btn').click (function () {
 		if ($('.top-navigation').css('display') == 'none') {
